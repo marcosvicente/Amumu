@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-br">
+
+	<head>
+		<title>Titulo</title>
+		<meta charset="utf-8">
+		<meta name="description" content="descrição do site">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!--[if lt IE 9]>
+			<script src="bower_components/html5shiv/dist/html5shiv.min.js"></script>
+			<![endif]-->
+
+
+
+<!-- Compressed CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css">
+
+<!-- Compressed JavaScript -->
+<script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
+
+		<link rel="stylesheet" href="bower_components/normalize-css/normalize.css" >
+		<link rel="stylesheet" href="bower_components/foundation-sites/scss/foundation.scss" >
+
+		<link rel="stylesheet" href="bower_components/foundation-sites/dist/foundation.css" >
+	</head>
+	<body>
+
+
+		<div class="off-canvas-wrapper">
+
+			<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+				<div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium">
+					<div class="title-bar-left">
+						<button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
+						<span class="title-bar-title">Foundation</span>
+					</div>
+				</div>
+
+				<div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+					<ul class="vertical dropdown menu" data-dropdown-menu>
+						<li><a href="">text 1</a></li>
+						<li><a href="">text 2</a></li>
+						<li><a href="">text 3</a></li>
+						<li><a href="">text 4</a></li>
+						<li><a href="">text 5</a></li>
+					</ul>
+				</div>
+
+
+				<div id="widemenu" class="top-bar">
+					<div class="top-bar-right">
+						<ul class="menu">
+							<li><a href="">text 1</a></li>
+							<li><a href="">text 2</a></li>
+							<li><a href="">text 3</a></li>
+							<li><a href="">text 4</a></li>
+							<li><a href="">text 5</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="off-canvas-content" data-off-canvas-content>
+				<div class="row column">
+
+
+				</div>
+			</div>
+		</div>
+
+
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+	    <script src="bower_components/foundation-sites/dist/foundation.min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(document).foundation();
+		</script>
+	</body>
+
+</html>
