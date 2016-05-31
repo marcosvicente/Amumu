@@ -15,16 +15,13 @@
 
 
 <!-- Compressed CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css">
 
-<!-- Compressed JavaScript -->
-<script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
 
 		<link rel="stylesheet" href="bower_components/normalize-css/normalize.css" >
-		<link rel="stylesheet" href="bower_components/foundation-sites/scss/foundation.scss" >
 
-		<link rel="stylesheet" href="bower_components/foundation-sites/dist/foundation.css" >
 		<link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="css/foundation.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="css/motion-ui.css" type="text/css" media="screen" title="no title" charset="utf-8">
 		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	</head>
 	<body>
@@ -119,12 +116,23 @@
 
 					</div>
 
+					<section class="empresa section">
+						<div class="row">
+							<div class="small-12 columns">
+								<header>
+									<h2>Empresa</h2>
+									<p>A empresa IES prestadora (Instalaçao eletrica e serviços) foi a realizaçao de um sonho de se tonar formal no mercado de prestaçao de serviços, após mais de 20 anos prestando serviços informalmente, assim posso atende todos os clientes com mais segurança e garantia de qualidade </p>
+								</header>
+							</div>
+						</div>
 
-					<section class="servico" id="servico">
+					</section>
+
+					<section class="servico section" id="servico">
 						<!-- tabs -->
 
 						<div class="row collapse">
-							<div class="medium-12  medium-centered columns">
+							<div class="medium-10  medium-centered columns">
 
 								<ul class="tabs " id="example-vert-tabs" data-tabs>
 									<li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">tab 1</a></li>
@@ -135,7 +143,7 @@
 									<li class="tabs-title"><a href="#panel4v">Tab 6</a></li>
 								</ul>
 							</div>
-							<div class="medium-12 columns">
+							<div class="medium-10 columns">
 								<div class="tabs-content vertical" data-tabs-content="example-vert-tabs">
 									<div class="tabs-panel is-active" id="panel1v">
 										<p>tab 1</p>
@@ -167,9 +175,102 @@
 
 					</section>
 
+					<section clas="formulario section">
+						<div class="row">
+							<div class="small-12 medium-10 large-8 medium-centered columns">
+								<form>
 
+									<div class="row">
+										<div class="small-3 columns">
+											<label for="">Nome:</label>
+										</div>
+										<div class="small-9 columns" >
+											<input type="text">
+										</div>
+									</div>
 
+									<div class="row">
+										<div class="small-3 columns">
+											<label for="">Endereço</label>
+										</div>
+										<div class="small-9 columns">
+											<input type="text">
+										</div>
+									</div>
 
+									<div class="row">
+										<div class="small-3 columns">
+											<label for="">E-mail</label>
+										</div>
+
+										<div class="small-9 columns">
+
+											<input type="email">
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="small-3 columns">
+											<label for="">Serviço Solicitado: </label>
+										</div>
+										<div class="small-9 columns">
+											<select name="">
+												<option>Alarmes</option>
+												<option>Antenas em Geral</option>
+												<option>Ar-Condicionado</option>
+												<option>Automatização de Portões</option>
+												<option>Câmeras</option>
+												<option>Cerca Elétrica</option>
+												<option>Elétrica em Geral</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="small-3 columns">
+											<label for="">Comentário</label>
+										</div>
+
+										<div class="small-9 columns">
+											<textarea id="" name="" cols="30" rows="10"></textarea>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="small-12 medium-6 large-4  medium-centered columns ">
+											<input type="submit" class="expanded button" value="Enviar">
+										</div>
+									</div>
+
+								</form>
+							</div>
+						</div>
+
+					</section>
+
+					<footer class="rodape section">
+						<div class="row">
+							<div class="small-12 medium-6 large-4 columns">
+								<header>
+									<h2>Empresa</h2>
+								</header>
+								<p>A empresa IES prestadora (Instalaçao eletrica e serviços) foi a realizaçao de um sonho de se tonar formal no mercado de prestaçao de serviços, após mais de 20 anos prestando serviços informalmente, assim posso atende todos os clientes com mais segurança e garantia de qualidade </p>
+							</div>
+							<div class="small-12 medium-6 large-4 columns">
+								<header>
+									<h2>Rede Social</h2>
+								</header>
+
+								
+							</div>
+							<div class="small-12 medium-6 large-4 columns">
+								<header>
+									<h2>Contato</h2>
+								</header>
+								<p><span>Tel:</span> 6666-666</p>
+								<p><span>Email:</span> amumu-bronze@email.com</p>
+							</div>
+						</div>
+					</footer>
 
 
 				</div>

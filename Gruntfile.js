@@ -5,12 +5,13 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 files: {
-                    'css/style.css' : 'bower_components/foundation-sites/scss/foundation.scss',
-                    'css/style.css' : 'bower_components/motion-ui/motion-ui.scss'
-
-              }
+                    'css/foundation.css' : 'bower_components/foundation-sites/assets/foundation.scss',
+                    'css/motion-ui.css' : 'bower_components/motion-ui/motion-ui.scss'
+                }
             }
         },
+
+
         watch: {
 			css: {
 				files: '**/*.scss',
