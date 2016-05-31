@@ -19,6 +19,8 @@
 
 		<link rel="stylesheet" href="bower_components/normalize-css/normalize.css" >
 
+		<link rel="stylesheet" href="bower_components/fakeLoader/fakeLoader.css" >
+
 		<link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
 		<link rel="stylesheet" href="css/foundation.css" type="text/css" media="screen" title="no title" charset="utf-8">
 		<link rel="stylesheet" href="css/motion-ui.css" type="text/css" media="screen" title="no title" charset="utf-8">
@@ -26,8 +28,10 @@
 	</head>
 	<body>
 
+<div id="fakeLoader"></div>
 
-		<div class="off-canvas-wrapper">
+	
+		<div class="off-canvas-wrapper" >
 
 			<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
@@ -42,21 +46,18 @@
 					<ul class="vertical dropdown menu" data-dropdown-menu>
 						<li><a href="#home">Home</a></li>
 						<li><a href="#servico">Serviços</a></li>
-						<li><a href="">text 3</a></li>
-						<li><a href="">text 4</a></li>
-						<li><a href="">text 5</a></li>
+						<li><a href="#empresa">Empresa</a></li>
+						<li><a href="#formulario">Contato</a></li>
 					</ul>
 				</div>
-
-
+	
 				<div id="widemenu" class="top-bar">
 					<div class="top-bar-right">
-						<ul class="menu">
+						<ul class="menu" data-magellan>
 							<li><a href="#home">Home</a></li>
 							<li><a href="#servico">Serviços</a></li>
-							<li><a href="">text 3</a></li>
-							<li><a href="">text 4</a></li>
-							<li><a href="">text 5</a></li>
+							<li><a href="#empresa">Empresa</a></li>
+							<li><a href="#formulario">Contato</a></li>
 						</ul>
 					</div>
 				</div>
@@ -72,9 +73,11 @@
 
 
 
+						<section id="home" class="slide-show" data-magellan-target="home">
+							
 
 
-							<div class="orbit" id="home"role="region" aria-label="Slide Show" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+							<div class="orbit" role="region" aria-label="Slide Show" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
 							<ul class="orbit-container">
 								<button class="orbit-previous">
 									<span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;
@@ -112,11 +115,11 @@
 
 
 
-
-
 					</div>
 
-					<section class="empresa section">
+					</section>
+					<section id="empresa" class="empresa section" data-magellan-target="empresa">
+
 						<div class="row">
 							<div class="small-12 columns">
 								<header>
@@ -175,7 +178,7 @@
 
 					</section>
 
-					<section clas="formulario section">
+					<section clas="formulario section" id="formulario" data-magellan-target="formulario">
 						<div class="row">
 							<div class="small-12 medium-10 large-8 medium-centered columns">
 								<form>
@@ -260,7 +263,6 @@
 									<h2>Rede Social</h2>
 								</header>
 
-								
 							</div>
 							<div class="small-12 medium-6 large-4 columns">
 								<header>
@@ -279,6 +281,17 @@
 
 
 		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="bower_components/fakeLoader/fakeLoader.js"></script>
+		<script >
+			$("#fakeLoader").fakeLoader({
+
+				timeToHide:1200, //Time in milliseconds for fakeLoader disappear
+					zIndex:999, // Default zIndex
+				spinner:"spinner2",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7' 
+				bgColor:"#2ecc71", //Hex, RGB or RGBA colors
+
+			});
+		</script>
 	    <script src="bower_components/foundation-sites/dist/foundation.min.js"></script>
 		<script type="text/javascript" charset="utf-8">
 			$(document).foundation();
