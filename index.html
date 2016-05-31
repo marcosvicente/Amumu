@@ -24,6 +24,7 @@
 		<link rel="stylesheet" href="bower_components/foundation-sites/scss/foundation.scss" >
 
 		<link rel="stylesheet" href="bower_components/foundation-sites/dist/foundation.css" >
+		<link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	</head>
 	<body>
 
@@ -41,8 +42,8 @@
 
 				<div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
 					<ul class="vertical dropdown menu" data-dropdown-menu>
-						<li><a href="">text 1</a></li>
-						<li><a href="">text 2</a></li>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#servico">Serviços</a></li>
 						<li><a href="">text 3</a></li>
 						<li><a href="">text 4</a></li>
 						<li><a href="">text 5</a></li>
@@ -53,17 +54,121 @@
 				<div id="widemenu" class="top-bar">
 					<div class="top-bar-right">
 						<ul class="menu">
-							<li><a href="">text 1</a></li>
-							<li><a href="">text 2</a></li>
+							<li><a href="#home">Home</a></li>
+							<li><a href="#servico">Serviços</a></li>
 							<li><a href="">text 3</a></li>
 							<li><a href="">text 4</a></li>
 							<li><a href="">text 5</a></li>
 						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="off-canvas-content" data-off-canvas-content>
-				<div class="row column">
+
+				<div class="off-canvas-content" data-off-canvas-content>
+					<div class="row column">
+
+
+
+
+
+
+
+
+
+
+
+							<div class="orbit" id="home"role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+							<ul class="orbit-container">
+								<button class="orbit-previous">
+									<span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;
+								</button>
+								<button class="orbit-next">
+									<span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;
+								</button>
+								<li class="is-active orbit-slide">
+									<img class="orbit-image" src="imagem/imagem-1.jpg" alt="Space">
+									<figcaption class="orbit-caption">primeiro</figcaption>
+								</li>
+								<li class="orbit-slide">
+									<img class="orbit-image" src="imagem/imagem-2.jpg" alt="Space">
+									<figcaption class="orbit-caption">segundo</figcaption>
+								</li>
+								<li class="orbit-slide">
+									<img class="orbit-image" src="imagem/imagem-3.jpg" alt="Space">
+									<figcaption class="orbit-caption">terceiro</figcaption>
+								</li>
+								<li class="orbit-slide">
+									<img class="orbit-image" src="imagem/imagem-4.jpg" alt="Space">
+									<figcaption class="orbit-caption">quarto</figcaption>
+								</li>
+							</ul>
+							<nav class="orbit-bullets">
+								<button class="is-active" data-slide="0">
+									<span class="show-for-sr">First slide details.</span>
+									<span class="show-for-sr">Current Slide</span>
+								</button>
+								<button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+								<button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+								<button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+							</nav>
+						</div>
+
+
+
+
+
+					</div>
+
+
+					<section class="servico" id="servico">
+						<!-- tabs -->
+
+						<div class="row collapse">
+							<div class="medium-12  medium-centered columns">
+
+								<ul class="tabs " id="example-vert-tabs" data-tabs>
+									<li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">tab 1</a></li>
+									<li class="tabs-title"><a href="#panel2v">Tab 2</a></li>
+									<li class="tabs-title"><a href="#panel3v">Tab 3</a></li>
+									<li class="tabs-title"><a href="#panel4v">Tab 4</a></li>
+									<li class="tabs-title"><a href="#panel3v">Tab 5</a></li>
+									<li class="tabs-title"><a href="#panel4v">Tab 6</a></li>
+								</ul>
+							</div>
+							<div class="medium-12 columns">
+								<div class="tabs-content vertical" data-tabs-content="example-vert-tabs">
+									<div class="tabs-panel is-active" id="panel1v">
+										<p>tab 1</p>
+									</div>
+									<div class="tabs-panel" id="panel2v">
+										<p>tab 2</p>
+									</div>
+									<div class="tabs-panel" id="panel3v">
+										<p>tab 3</p>
+									</div>
+									<div class="tabs-panel" id="panel4v">
+										<p>tab 4</p>
+									</div>
+									<div class="tabs-panel" id="panel5v">
+										<p>tab 5</p>
+									</div>
+									<div class="tabs-panel" id="panel6v">
+										<p>tab 6</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+
+
+					</section>
+
+
+
+
 
 
 				</div>
@@ -75,6 +180,7 @@
 	    <script src="bower_components/foundation-sites/dist/foundation.min.js"></script>
 		<script type="text/javascript" charset="utf-8">
 			$(document).foundation();
+
 		</script>
 	</body>
 
