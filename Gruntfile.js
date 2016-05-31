@@ -1,21 +1,29 @@
 module.exports = function(grunt) {
 
   // Project configuration.
-  grunt.initConfig({
+    grunt.initConfig({
         sass: {
             dist: {
-            options: {
-                loadPath: ['node_modules/foundation-sites/scss']
-      }
-    }
-  }
-  });
+                files: {
+                    'css/style.css' : 'bower_components/foundation-sites/scss/foundation.scss',
+                    'css/style.css' : 'bower_components/motion-ui/motion-ui.scss'
 
-  // Load the plugin that provides the "uglify" task.
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+              }
+            }
+        },
+        watch: {
+			css: {
+				files: '**/*.scss',
+				tasks: ['sass']
+			}
+		}
+    });
 
-  // Default task(s).
-  grunt.registerTask('default', ['uglify']);
+
+    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+
+    grunt.registerTask('default', ['watch']);
 
 };
 
