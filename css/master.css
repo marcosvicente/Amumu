@@ -15,8 +15,12 @@
     }
 }
 
-.top-bar{
+.fixo{
     position:fixed;
     z-index:1;
     width:100%;
+}
+
+.menu-01{
+    border-bottom:red;
 }
