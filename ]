@@ -35,18 +35,14 @@
 
 			<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
-
-				<div  data-sticky-container >
-				<div class="title-bar fixo"  data-responsive-toggle="widemenu" data-off-canvas-content data-hide-for="medium">
+				<div class="title-bar fixo" data-responsive-toggle="widemenu" data-hide-for="medium">
 					<div class="title-bar-left">
 						<button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
 						<span class="title-bar-title">Menu</span>
 					</div>
 				</div>
 
-				</div>
-
-				<div class="off-canvas position-left  " id="offCanvasLeft" data-off-canvas>
+				<div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
 					<ul class="vertical dropdown menu" data-dropdown-menu>
 						<li><a href="#home">Home</a></li>
 						<li><a href="#servico">Serviços</a></li>
@@ -239,7 +235,7 @@
 										</div>
 
 										<div class="small-12 medium-9 columns">
-											<input type="file" class="button-file" placeholder="Envie seu portifolio">
+											<input type="file" class="button-file" value="Envie seu portifolio">
 										</div>
 									</div>
 
@@ -257,7 +253,7 @@
 
 									<div class="row">
 										<div class="small-12 medium-6 large-4  medium-centered columns ">
-											<input type="submit" class="expanded button" value="Enviar">
+											<input type="submit" class="expanded button" placeholder="Enviar">
 										</div>
 									</div>
 
