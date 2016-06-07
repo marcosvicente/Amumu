@@ -3,9 +3,6 @@
     margin:6rem 1rem;
     padding-top: 5rem;
 }
-.formulario.{
-  padding: 5em;
-}
 @media screen and (min-width:40rem){
     .section{
         margin:4rem 2rem;
@@ -20,7 +17,7 @@
 
 .fixo{
     position:fixed;
-    z-index:1;
+    z-index:40;
     width:100%;
 }
 
@@ -32,36 +29,35 @@
 .fonte-customizada, .fonte-customizada:hover, .fonte-customizada:focus{
     color: #fff;
 }
+
+
+/* menu styles */
 .menu-01:hover{
-  border-bottom: 1px solid #f00;
+  border-bottom: 3px solid  rgba(255,0,0,1.0);
 }
 .menu-02:hover{
-  border-bottom: 1px solid blue;
+  border-bottom: 3px solid rgba(0,0,255,1.0);
 }
 .menu-03:hover{
-  border-bottom: 1px solid green;
+  border-bottom: 3px solid rgba(0,255,0,1.0);
 }
 .menu-04:hover{
-  border-bottom: 1px solid yellow;
+  border-bottom: 3px solid rgba(255, 255, 0, 1.0);
 }
 
-
-.menu-mobile{
-
-  color:#000;
+@media screen and (max-width:640px){
+	.menu-01:hover, .menu-02:hover, .menu-03:hover, .menu-04:hover{
+		background: #d1d1d1;
+		color:#000;
+		border:none;
+	}
 }
-.menu-mobile:hover{
-  background: #d8d8cd;
-  color: #000;
-}
+
 .empresa{
-  background: url("../imagem/background-company.jpg");
-width: 100%;
+	background: url("../imagem/background-company.jpg");
+	width: 100%;
     color: #fff;
     margin: 0;
-}
-.fale-conosco{
-  margin:5em;
 }
 
 .imagem-file {
@@ -75,15 +71,25 @@ width: 100%;
   margin: 1em;
 }
 .button-file{
-  opacity:0;
-  -moz-opacity:0;
-  filter:alpha(opacity:0);
-  position: relative;
-       
-  
-    z-index: 2;
+	opacity:0;
+	-moz-opacity:0;
+	filter:alpha(opacity:0);
+	position: relative;
+	z-index: 2;
 }
+.rodape{
+	background:url("../imagem/footer.jpg");
+	color:#fff;
+	margin:0;
 
+}
+.button-file{
+	opacity:0;
+	-moz-opacity:0;
+	filter:alpha(opacity:0);
+	position: relative;
+	z-index: 2;
+}
 .rodape-conteudo img{
   height: 2em;
   width: 2em;
