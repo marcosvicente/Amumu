@@ -1,14 +1,17 @@
 .section{
     height:20rem;
-    margin:2rem 1rem;
+    margin:6rem 1rem;
+    padding-top: 5rem;
 }
-
+.formulario.{
+  padding: 5em;
+}
 @media screen and (min-width:40rem){
     .section{
         margin:4rem 2rem;
     }
 }
- 
+
 @media screen and (min-width:60rem){
     .section{
         margin:8rem 2rem;
@@ -26,6 +29,63 @@
 }
 
 
+.fonte-customizada, .fonte-customizada:hover, .fonte-customizada:focus{
+    color: #fff;
+}
+.menu-01:hover{
+  border-bottom: 1px solid #f00;
+}
+.menu-02:hover{
+  border-bottom: 1px solid blue;
+}
+.menu-03:hover{
+  border-bottom: 1px solid green;
+}
+.menu-04:hover{
+  border-bottom: 1px solid yellow;
+}
+
+
+.menu-mobile{
+
+  color:#000;
+}
+.menu-mobile:hover{
+  background: #d8d8cd;
+  color: #000;
+}
+.empresa{
+  background: url("../imagem/background-company.jpg");
+width: 100%;
+    color: #fff;
+    margin: 0;
+}
+.fale-conosco{
+  margin:5em;
+}
+
+.imagem-file {
+  background-image: url("../imagem/upload.svg");
+  background-size: cover;
+  display: block;
+  position: relative;
+  height: 2em;
+  width: 2em;
+  padding: 2em;
+  margin: 1em;
+}
 .button-file{
-	border:none;
+  opacity:0;
+  -moz-opacity:0;
+  filter:alpha(opacity:0);
+  position: relative;
+       
+  
+    z-index: 2;
+}
+
+.rodape-conteudo img{
+  height: 2em;
+  width: 2em;
+  margin-right: 1em;
 }

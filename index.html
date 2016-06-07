@@ -28,57 +28,33 @@
 	</head>
 	<body>
 
-<div id="fakeLoader"></div>
-
-	
-		<div class="off-canvas-wrapper" >
-
-			<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+		<div id="fakeLoader"></div>
 
 
-				<div  data-sticky-container >
-				<div class="title-bar fixo"  data-responsive-toggle="widemenu" data-off-canvas-content data-hide-for="medium">
-					<div class="title-bar-left">
-						<button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
-						<span class="title-bar-title">Menu</span>
+					<div class="top-bar fixo">
+						<div class="top-bar-title">
+							<span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+								<button class="menu-icon dark" type="button" data-toggle></button>
+							</span>
+							<strong>Site Title</strong>
+						</div>
+						<div id="responsive-menu">
+
+					<div class="top-bar-right ">
+											<ul class="vertical medium-horizontal menu dropdown" data-magellan>
+												<li><a href="#home" class="menu-01 fonte-customizada">Home</a></li>
+												<li><a href="#empresa" class="menu-03 fonte-customizada">Empresa</a></li>
+												<li><a href="#servico" class="menu-02 fonte-customizada">Serviços</a></li>
+												<li><a href="#formulario" class="menu-04 fonte-customizada">Contato</a></li>
+											</ul>
+										</div>
+						</div>
 					</div>
-				</div>
-
-				</div>
-
-				<div class="off-canvas position-left  " id="offCanvasLeft" data-off-canvas>
-					<ul class="vertical dropdown menu" data-dropdown-menu>
-						<li><a href="#home">Home</a></li>
-						<li><a href="#servico">Serviços</a></li>
-						<li><a href="#empresa">Empresa</a></li>
-						<li><a href="#formulario">Contato</a></li>
-					</ul>
-				</div>
-	
-				<div id="widemenu" class="top-bar fixo">
-					<div class="top-bar-right">
-						<ul class="menu" data-magellan>
-							<li class="menu-01"><a href="#home" class="menu-01" >Home</a></li>
-							<li><a href="#servico" class="menu-02">Serviços</a></li>
-							<li><a href="#empresa" class="menu-03">Empresa</a></li>
-							<li><a href="#formulario" class="menu-04">Contato</a></li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="off-canvas-content" data-off-canvas-content>
 					<div class="row column">
 
 
-
-
-
-
-
-
-
 						<section id="home" class="slide-show" data-magellan-target="home">
-							
+
 
 
 							<div class="orbit" role="region" aria-label="Slide Show" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
@@ -125,10 +101,10 @@
 					<section id="empresa" class="empresa section" data-magellan-target="empresa">
 
 						<div class="row">
-							<div class="small-12 columns">
+							<div class="small-12 medium-10 medium-centered columns">
 								<header>
 									<h2>Empresa</h2>
-									<p>A empresa IES prestadora (Instalaçao eletrica e serviços) foi a realizaçao de um sonho de se tonar formal no mercado de prestaçao de serviços, após mais de 20 anos prestando serviços informalmente, assim posso atende todos os clientes com mais segurança e garantia de qualidade </p>
+									<p class="text-justify">A empresa IES prestadora (Instalaçao eletrica e serviços) foi a realizaçao de um sonho de se tonar formal no mercado de prestaçao de serviços, após mais de 20 anos prestando serviços informalmente, assim posso atende todos os clientes com mais segurança e garantia de qualidade </p>
 								</header>
 							</div>
 						</div>
@@ -138,19 +114,20 @@
 					<section class="servico section" id="servico">
 						<!-- tabs -->
 
-						<div class="row collapse">
-							<div class="medium-10  medium-centered columns">
-
+						<div class="row">
+							<div class="small-12 medium-8 medium-centered columns">
 								<ul class="tabs " id="example-vert-tabs" data-tabs>
-									<li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">tab 1</a></li>
-									<li class="tabs-title"><a href="#panel2v">Tab 2</a></li>
-									<li class="tabs-title"><a href="#panel3v">Tab 3</a></li>
-									<li class="tabs-title"><a href="#panel4v">Tab 4</a></li>
-									<li class="tabs-title"><a href="#panel3v">Tab 5</a></li>
-									<li class="tabs-title"><a href="#panel4v">Tab 6</a></li>
+									<li class="tabs-title is-active"><a href="#panel1v" aria-selected="true"><img src="imagem/ar-c.png" alt="" /></a></li>
+									<li class="tabs-title"><a href="#panel2v"><img src="imagem/portao.png" alt="" /></a></li>
+									<li class="tabs-title"><a href="#panel3v"><img src="imagem/cameras.png" alt="" /></a></li>
+									<li class="tabs-title"><a href="#panel4v"><img src="imagem/alarme_e_cerca.png" alt="" /></a></li>
+									<li class="tabs-title"><a href="#panel5v"><img src="imagem/eletrica.png" alt="" /></a></li>
+									<li class="tabs-title"><a href="#panel6v"><img src="imagem/antenas.png" alt="" /></a></li>
 								</ul>
 							</div>
-							<div class="medium-10 columns">
+						</div>
+						<div class="row">
+							<div class="small-12 medium-8 medium-centered columns">
 								<div class="tabs-content vertical" data-tabs-content="example-vert-tabs">
 									<div class="tabs-panel is-active" id="panel1v">
 										<p>tab 1</p>
@@ -173,21 +150,20 @@
 								</div>
 							</div>
 						</div>
-
-
-
-
-
-
-
 					</section>
 
 					<section clas="formulario section" id="formulario" data-magellan-target="formulario">
 						<div class="row">
 							<div class="small-12 medium-10 large-8 medium-centered columns">
+								
+										<header class="text-center fale-conosco">
+											<h2>Fale conosco</h2>
+										</header>
+
 								<form>
 
 									<div class="row">
+									
 										<div class="small-12 medium-3 columns">
 											<label for="">Nome:</label>
 										</div>
@@ -239,7 +215,9 @@
 										</div>
 
 										<div class="small-12 medium-9 columns">
-											<input type="file" class="button-file" placeholder="Envie seu portifolio">
+											<span class="imagem-file">
+												<input type="file" class="button-file" placeholder="Envie seu portifolio">
+											</span>
 										</div>
 									</div>
 
@@ -251,7 +229,7 @@
 										</div>
 
 										<div class="small-12 medium-9 columns">
-											<textarea id="" name="" cols="30" rows="10"></textarea>
+											<textarea id="" name="" cols="30" rows="10" placeholder="Digite um comentário"></textarea>
 										</div>
 									</div>
 
@@ -269,24 +247,25 @@
 
 					<footer class="rodape section">
 						<div class="row">
-							<div class="small-12 medium-6 large-4 columns">
+							<div class="small-12 medium-6 large-4 columns rodape-conteudo">
 								<header>
-									<h2>Empresa</h2>
+									<h2>Telefone</h2>
 								</header>
-								<p>A empresa IES prestadora (Instalaçao eletrica e serviços) foi a realizaçao de um sonho de se tonar formal no mercado de prestaçao de serviços, após mais de 20 anos prestando serviços informalmente, assim posso atende todos os clientes com mais segurança e garantia de qualidade </p>
-							</div>
-							<div class="small-12 medium-6 large-4 columns">
-								<header>
-									<h2>Rede Social</h2>
-								</header>
+								<p> <img src="imagem/telephone.svg"><span>Tel:</span>(15) 3263-2373</p>
+								<p><img src="imagem/cell-phone.svg"><span>Cel:</span>(11) 97379-0424</p>
 
 							</div>
-							<div class="small-12 medium-6 large-4 columns">
+							<div class="small-12 medium-6 large-4 columns rodape-conteudo">
+								<header>
+									<h2>Whatsapp</h2>
+								</header>
+								<p><img src="imagem/whatsapp-logo.svg">(15) 98154-5110</p>
+							</div>
+							<div class="small-12 medium-6 large-4 columns rodape-conteudo">
 								<header>
 									<h2>Contato</h2>
 								</header>
-								<p><span>Tel:</span> 6666-666</p>
-								<p><span>Email:</span> amumu-bronze@email.com</p>
+								<p><img src="imagem/email.svg"><span>Email:</span> ies_servicos@outlook.com</p>
 							</div>
 						</div>
 					</footer>
@@ -304,8 +283,8 @@
 
 				timeToHide:2000, //Time in milliseconds for fakeLoader disappear
 				zIndex:999, // Default zIndex
-				spinner:"spinner4",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7' 
-				bgColor:"#7D7878", //Hex, RGB or RGBA colors
+				spinner:"spinner7",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+				bgColor:"#5db1f8", //Hex, RGB or RGBA colors
 
 			});
 		</script>
