@@ -59,7 +59,12 @@
     color: #fff;
     margin: 0;
 }
-
+.formulario{
+	background:url("../imagem/paraquedas.jpg")
+}
+.fale-conosco{
+	margin:2em;
+}
 .imagem-file {
   background-image: url("../imagem/upload.svg");
   background-size: cover;
