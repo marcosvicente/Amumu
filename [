@@ -52,28 +52,27 @@
 		border:none;
 	}
 }
-.slide-show{
-	margin-top:3.4em;
-}
+
 .empresa{
-	background: url("../imagem/fundo-emp.jpg");
+	background: url("../imagem/fundo-emp.jpg.jpg");
 	width: 100%;
     color: #fff;
     margin: 0;
 }
 .servico{
+	background:#3F5361;
 	margin:0;
 }
 .fale-conosco{
 	margin:2em;
 }
 .imagem-file {
-  background-image: url("../imagem/baixar_imagem.png");
+  background-image: url("../imagem/upload.svg");
   background-size: cover;
   display: block;
   position: relative;
-  height: 100%;
-  width: 100%;
+  height: 2em;
+  width: 2em;
   padding: 2em;
   margin: 1em;
 }
@@ -85,19 +84,10 @@
 	z-index: 2;
 }
 .rodape{
-	background:url("../imagem/fundo-emp.jpg");
+	background:url("../imagem/footer.jpg");
 	color:#fff;
 	margin:0;
-	padding:0;
 
-}
-@media screen and (max-width:640px){
-	.rodape{
-		height:100%;
-	}
-}
-.rodape-conteudo{
-	margin-top:2em;
 }
 .button-file{
 	opacity:0;
