@@ -56,6 +56,7 @@
 	margin:0 auto;
 	padding: 0;
 	height: 40em;
+	width:60em;
 }
 @media screen and (min-width:40em) and (max-width:60em){
     .servico{
@@ -66,10 +67,11 @@
 @media screen and (min-width:60em){
     .servico{
 		height:60em;
+		width: 40em !important;
     }
 }
 .servico-titulo{
-	padding:2em;
+	padding:2em 0;
 }
 .fale-conosco{
 	margin:2em;
