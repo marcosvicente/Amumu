@@ -32,17 +32,8 @@
 
 
 /* menu styles */
-.menu-01:hover{
-  border-bottom: 3px solid  rgba(255,0,0,1.0);
-}
-.menu-02:hover{
-  border-bottom: 3px solid rgba(0,0,255,1.0);
-}
-.menu-03:hover{
-  border-bottom: 3px solid rgba(0,255,0,1.0);
-}
-.menu-04:hover{
-  border-bottom: 3px solid rgba(255, 255, 0, 1.0);
+.menu-01:hover,.menu-02:hover,.menu-03:hover,.menu-04:hover{
+  border-bottom: 3px solid rgba(255, 255, 255, 1.0);
 }
 
 @media screen and (max-width:640px){
@@ -62,18 +53,34 @@
     margin: 0;
 }
 .servico{
-	margin:0;
+	margin:0 auto;
+	padding: 0;
+	height: 40em;
+}
+@media screen and (min-width:40em) and (max-width:60em){
+    .servico{
+		height:20em;
+    }
+}
+
+@media screen and (min-width:60em){
+    .servico{
+		height:60em;
+    }
+}
+.servico-titulo{
+	padding:2em;
 }
 .fale-conosco{
 	margin:2em;
 }
 .imagem-file {
-  background-image: url("../imagem/baixar_imagem.png");
+  background-image: url("../imagem/baixar_imagem.jpg");
   background-size: cover;
   display: block;
   position: relative;
-  height: 100%;
-  width: 100%;
+  height: 10%;
+  width: 10%;
   padding: 2em;
   margin: 1em;
 }
@@ -110,4 +117,5 @@
   height: 2em;
   width: 2em;
   margin-right: 1em;
+
 }
